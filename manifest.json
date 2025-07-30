@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Markdown Reader",
-  "version": "1.0",
+  "version": "0.0.1",
   "description": "A Firefox extension to render Markdown files using Marked.js.",
   "icons": {
     "48": "icons/markdown.png"
@@ -9,9 +9,9 @@
   "content_scripts": [
     {
       "matches": [
-      	"file://*/*.md",  "file://*/*.markdown",
-	      "http://*/*.md",  "http://*/*.markdown",
-	     	"https://*/*.md", "https://*/*.markdown"
+      	"file://*/*.md",
+	      "http://*/*.md",
+	     	"https://*/*.md"
       ],
 			"css": ["style.css"],
       "js": ["marked.min.js", "content.js"],
@@ -20,7 +20,7 @@
   ],
 	"browser_specific_settings": {
 		"gecko": {
-		  "id": "borderify@example.com"
+		  "id": "friaelagua@gmail.com"
 		}
 	}
 }
